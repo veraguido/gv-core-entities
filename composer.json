@@ -1,0 +1,34 @@
+{
+    "name": "gvera/core-entities",
+    "description": "gv core entities",
+    "license": "MIT",
+    "keywords": ["gv", "core entities"],
+    "authors": [
+        {
+            "name": "Guido Vera",
+            "email": "vera.a.guido@gmail.com"
+        }
+    ],
+    "config": {
+        "platform" :{
+            "php": "8.0.0"
+        }
+    },
+    "require": {
+	"doctrine/orm":             "^2.7.0"
+    },
+    "require-dev": {
+    },
+    "scripts": {
+    },
+    "autoload": {
+      "psr-4": {
+        "Gvera\\": [
+            "src/"
+        ],
+          "Tests\\": [
+              "tests/"
+          ]
+      }
+    }
+}
