@@ -13,11 +13,19 @@ use Doctrine\Common\Collections\Collection;
 class UserRole
 {
     /** @Id @Column(type="integer") @GeneratedValue */
-    protected $id;
+    protected int $id;
     /** @Column(type="string", nullable=false, unique=true, length=20) */
-    protected $name;
+    protected string $name;
     /** @Column(type="integer", unique=true, nullable=false) */
     protected $rolePriority;
+
+    /**
+     * @return mixed
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
 
     /**
      * Many Users have Many Stores.
